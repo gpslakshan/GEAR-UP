@@ -1,0 +1,274 @@
+<!doctype html>
+	<html>
+		<head>
+		<meta charset="UTF-8">
+			<title>Products</title> 
+			<link rel="stylesheet" href="style.css">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" >
+		    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<script src="shop.js"></script>
+		</head>
+		<body>
+		<header>
+		
+	<div id="navbar" class="navbar">  
+      <h1 class="logo"><span class="text-primary">GEAR</span>-UP</h1>
+      <nav>
+	  <br>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="../AboutUs_page/aboutUS.html">About</a></li>
+          <li><a href="../contactUs.html">Contact</a></li>
+          <li><a href="../account.html">Account</a></li>
+		  <a id ="cartButton">
+			<img id ="cartButton" src="images\add.png" width="30px" height="30px" onclick="showCart()" alt="cart">
+		  </a>
+        </ul>
+      </nav>
+    </div>
+			<div class="small-container">
+				<div class="row row-2">
+					<h2>All Products</h2>
+					<select>
+					<option><a>Sort by price</a></option>
+					<option>Sort by rating</option>
+					<option>Sort by sale</option>
+					<option>Sort by popularity</option>
+					</select>
+				</div>
+			
+			    		<div class="row">
+						<div class="col-4">
+						<a href="../ProductDetail_page/Product-1.html"><img class="productImage" src="images/football1.jpg" alt="football"></a>
+						<h4>Nike Football</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<p>$ 80</p>
+						<label for="0">Quantity</label>
+                              <input type="number" id="0" name="quantity" min="1" max="5"><br>
+							<button onclick= "addToCart('0')" class="addToCart">Add To Cart</buton>
+								
+						
+				</div>
+				<div class="col-4">
+						<a href="../ProductDetail_page/Product-2.html"><img src="images/badminton.jpg" alt="badminton" ></a>
+						<h4>Wilson Badminton Bat</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<p>$ 50</p>
+						
+						<label for="1">Quantity</label>
+                              <input type="number" id="1" name="quantity" min="1" max="5"><br>
+							<button onclick= "addToCart('1')" class="addToCart">Add To Cart</buton>
+								
+						
+				</div>
+				<div class="col-4">
+						<a href="../ProductDetail_page/Product-3.html"><img src="images/cricket1.jpg" alt="cricket"></a>
+						<h4>Cricket Bat</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<p>$ 60</p>
+						
+						
+						<label for="2">Quantity</label>
+                              <input type="number" id="2" name="quantity" min="1" max="5"><br>
+							<button onclick= "addToCart('2')" class="addToCart">Add To Cart</buton>
+								
+						
+				</div>
+				<div class="col-4">
+						<a href="../ProductDetail_page/Product-4.html"><img src="images/helmet.jpg" alt="helmet"></a>
+						<h4>Cricket Helmet</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<p>$ 40</p>
+						<label for="3">Quantity</label>
+                              <input type="number" id="3" name="quantity" min="1" max="5"><br>
+							<button onclick= "addToCart('3')" class="addToCart">Add To Cart</buton>
+								
+						
+				</div>
+				<div class="col-4">
+						<a href="../ProductDetail_page/Product-5.html"><img src="images/nike1.jpg" alt="nike"></a>
+						<h4>Nike Black Shoes</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<p>$ 70</p>
+						<label for="4">Quantity</label>
+                              <input type="number" id="4" name="quantity" min="1" max="5"><br>
+							<button onclick= "addToCart('4')" class="addToCart">Add To Cart</buton>
+								
+						
+				</div>
+					<div class="col-4">
+						<a href="../ProductDetail_page/Product-6.html"><img src="images/tshirt1.jpg" alt="tshirt"></a>
+						<h4>Nike T-shirt</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<p>$ 50</p>
+						<label for="5">Quantity</label>
+                              <input type="number" id="5" name="quantity" min="1" max="5"><br>
+							<button onclick= "addToCart('5')" class="addToCart">Add To Cart</buton>
+							
+						
+								
+						
+					</div>
+					<div class="col-4">
+						<a href="../ProductDetail_page/Product-7.html"><img src="images/ball1.jpg" alt="tshirt"></a>
+						<h4>Cricket Ball</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<p>$ 20</p>
+						<label for="5">Quantity</label>
+                              <input type="number" id="6" name="quantity" min="1" max="5"><br>
+							<button onclick= "addToCart('6')" class="addToCart">Add To Cart</buton>
+							
+						
+								
+						
+					</div>
+					<div class="col-4">
+						<a href="../ProductDetail_page/Product-8.html"><img src="images/rugby.jpg" alt="rugby"></a>
+						<h4>Rugby Ball</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<p>$ 40</p>
+						<label for="5">Quantity</label>
+                              <input type="number" id="7" name="quantity" min="1" max="5"><br>
+							<button onclick= "addToCart('7')" class="addToCart">Add To Cart</buton>
+							
+						
+								
+						
+						
+						
+					</div>
+				</div>
+				<div class="page-btn">
+					<a href = "Products.html"><span>1</span></a>
+					<span>2</span>
+					<span>3</span>
+					<span>&#8594;</span>
+				</div>
+	</div>
+	
+	<footer>
+		<div class="f-container">
+		  <div class="f-row">
+			<div class="footer-col">
+			  <h3>Extras</h3>
+			  <ul>
+				<li>
+				  <a href="page editor.html">Page Developer</a>
+				</li>
+				<li><a href="">Affiliate</a></li>
+				<li><a href="../quiz/quiz.html">Quiz</a></li>
+				<li><a href="../images/Sitemap.svg">Site Map</a></li>
+			  </ul>
+			</div>
+			<div class="footer-col">
+			  <h3>INFORMATION</h3>
+			  <ul>
+				<li><a href="../AboutUs_page/aboutUS.html">About Us</a></li>
+				<li><a href="../other/privacy.html">Privacy Policy</a></li>
+				<li>
+				  <a href="../other/terms&conditions.html">Terms & Conditions</a>
+				</li>
+				<li><a href="../contactUs.html">Contact Us</a></li>
+			  </ul>
+			</div>
+			<div class="footer-col">
+			  <h3>MY ACCOUNT</h3>
+			  <ul>
+				<li><a href="../account.html">Account</a></li>
+				<li><a href="">Order History</a></li>
+				<li><a href="">Newsletter</a></li>
+				<li><a href="../other/returns.html">Return Policy</a></li>
+			  </ul>
+			</div>
+			<div class="footer-col">
+			  <h3>FOLLOW US</h3>
+			  <ul>
+				<li>
+					<a href="https://www.facebook.com/" target="_blank">Facebook</a>
+				  </li>
+				  <li>
+					<a href="https://twitter.com/" target="_blank">Twitter</a>
+				  </li>
+				  <li>
+					<a href="https://www.instagram.com/" target="_blank"
+					  >Instagram</a
+					>
+				  </li>
+				  <li>
+					<a href="https://www.youtube.com/" target="_blank">Youtube</a>
+				  </li>
+			  </ul>
+			</div>
+		  </div>
+		  <p id="copyright">Copyright &copy; 2021 - GEAR UP</p>
+		</div>
+	  </footer>
+
+	  <!-- The Modal -->
+	  <div id="cartModel" class="modal">
+		<!-- Modal content -->
+		<div id="modelContent">
+				<div class="close_button">
+					<span class="close">&times;</span>
+				</div>
+			<div id="cartItems">
+			</div>
+			<br>
+			<br>
+					<button onclick="clearCart()">Clear</button>
+					<a href="Checkout.html"><button>Checkout</button></a>
+
+		</div>
+		</div>
+		</body>
+	</html>
+			

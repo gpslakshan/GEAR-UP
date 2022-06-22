@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Products</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="js/shop.js"></script>
+    <link
+      href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="navbar" class="navbar">
+        <h1 class="logo"><span class="text-primary">GEAR</span>-UP</h1>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Products_page/Products.html">Products</a></li>
+            <li><a href="../AboutUs_page/aboutUS.html">About</a></li>
+            <li><a href="../contactUs.html">Contact</a></li>
+            <li><a href="../account.html">Account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="card">
+        <div class="container-fliud">
+          <div class="wrapper row">
+            <div class="col-sm-6 preview">
+              <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="img/shoes_images/r1.jpg" />
+                  </div>
+                  <div class="item">
+                    <img src="img/shoes_images/r2.jpg" />
+                  </div>
+                  <div class="item">
+                    <img src="img/shoes_images/r3.jpg" />
+                  </div>
+                  <div class="item">
+                    <img src="img/shoes_images/r4.jpg" />
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix">
+                <div
+                  id="thumbcarousel"
+                  class="carousel slide"
+                  data-interval="false"
+                >
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div
+                        data-target="#carousel"
+                        data-slide-to="0"
+                        class="thumb"
+                      >
+                        <img src="img/shoes_images/r1.jpg" />
+                      </div>
+                      <div
+                        data-target="#carousel"
+                        data-slide-to="1"
+                        class="thumb"
+                      >
+                        <img src="img/shoes_images/r2.jpg" />
+                      </div>
+                      <div
+                        data-target="#carousel"
+                        data-slide-to="2"
+                        class="thumb"
+                      >
+                        <img src="img/shoes_images/r3.jpg" />
+                      </div>
+                      <div
+                        data-target="#carousel"
+                        data-slide-to="3"
+                        class="thumb"
+                      >
+                        <img src="img/shoes_images/r4.jpg" />
+                      </div>
+                    </div>
+                    <!-- /item -->
+                  </div>
+                  <!-- /carousel-inner -->
+                </div>
+                <!-- /thumbcarousel -->
+              </div>
+              <!-- /clearfix -->
+            </div>
+            <!-- /col-sm-6 -->
+            <div class="details col-md-6">
+              <h3 class="product-title">Rugby Balls</h3>
+              <div class="rating">
+                <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <span class="review-no">51 reviews</span>
+              </div>
+              <p class="product-description">
+                A brand-new, unused, unopened, undamaged item in its original
+                packaging (where packaging is applicable). Packaging should be
+                the same as what is found in a retail store, unless the item is
+                handmade or was packaged by the manufacturer in non-retail
+                packaging, such as an unprinted box or plastic bag. See the
+                seller's listing for full details.
+              </p>
+              <p class="product-description">
+                A new, unused item with absolutely no signs of wear. The item
+                may be missing the original packaging, or in the original
+                packaging but not sealed. The item may be a factory second or a
+                new, unused item with defects. See the seller's listing for full
+                details and description of any imperfections.
+              </p>
+              <p class="product-description">
+                An item that does not function as intended and is not fully
+                operational. This includes items that are defective in ways that
+                render them difficult to use, items that require service or
+                repair, or items missing essential components. See the seller's
+                listing for full details.
+              </p>
+
+              <h4 class="price">current price: <span>$40</span></h4>
+
+              <div class="action">
+                <button class="add-to-cart btn btn-default" type="button">
+                  add to cart
+                </button>
+                <button class="like btn btn-default" type="button">
+                  <span class="fa fa-heart"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="f-container">
+        <div class="f-row">
+          <div class="footer-col">
+            <h3>Extras</h3>
+            <ul>
+              <li>
+                <a href="../other/pageDeveloperProductsDetail.html"
+                  >Page Developer</a
+                >
+              </li>
+              <li><a href="">Affiliate</a></li>
+              <li><a href="../quiz/quiz.html">Quiz</a></li>
+              <li><a href="../images/Sitemap.svg">Site Map</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>INFORMATION</h3>
+            <ul>
+              <li><a href="../AboutUs_page/aboutUS.html">About Us</a></li>
+              <li><a href="../other/privacy.html">Privacy Policy</a></li>
+              <li>
+                <a href="../other/terms&conditions.html">Terms & Conditions</a>
+              </li>
+              <li><a href="../contactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>MY ACCOUNT</h3>
+            <ul>
+              <li><a href="../account.html">Account</a></li>
+              <li><a href="">Order History</a></li>
+              <li><a href="">Newsletter</a></li>
+              <li><a href="../other/returns.html">Return Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>FOLLOW US</h3>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/" target="_blank">Twitter</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p id="copyright">Copyright &copy; 2021 - GEAR UP</p>
+      </div>
+    </footer>
+
+    <!-- The Modal -->
+    <div id="cartModel" class="modal">
+      <!-- Modal content -->
+      <div id="modelContent">
+        <div class="close_button">
+          <span class="close">&times;</span>
+        </div>
+        <div id="cartItems"></div>
+        <br />
+        <br />
+        <button onclick="clearCart()">Clear</button>
+        <a href="Checkout.html">
+          <button>Checkout</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

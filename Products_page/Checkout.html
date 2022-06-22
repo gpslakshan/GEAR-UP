@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="shop.js"></script>
+
+    <title>Order</title>
+  </head>
+  <body>
+    <header>
+      <div id="navbar" class="navbar">
+        <h1 class="logo"><span class="text-primary">GEAR</span>-UP</h1>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="../AboutUs_page/aboutUS.html">About</a></li>
+            <li><a href="../contactUs.html">Contact</a></li>
+            <li><a href="../Account_page/account.html">Account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <h3>Customer Informations</h3>
+          <br />
+          <label for="fname" class="fname"> Full Name</label>
+          <input type="text" id="fname" name="firstname" />
+          <br />
+          <label for="email" class="email"> Email</label>
+          <input type="text" id="email" name="email" />
+          <br />
+          <label for="adr"> Address</label>
+          <input type="text" id="adr" name="address" />
+          <br />
+          <label for="city"> City</label>
+          <input type="text" id="city" name="city" />
+          <br />
+          <label for="cardNumber">Card Number</label>
+          <input type="text" id="cardNumber" name="cardNumber" />
+          <br />
+          <br />
+          <input
+            type="submit"
+            value="Place Order"
+            class="btn"
+            onclick="checkout1()"
+          />
+          <br />
+
+          `
+          <p id="thanks"></p>
+          <br />
+          <p id="came"></p>
+          <p id="mail"></p>
+          <p id="address"></p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="f-container">
+        <div class="f-row">
+          <div class="footer-col">
+            <h3>Extras</h3>
+            <ul>
+              <li><a href="">Gift Certificates</a></li>
+              <li><a href="">Affiliate</a></li>
+              <li><a href="../quiz/quiz.html">Quiz</a></li>
+              <li><a href="../images/Sitemap.svg">Site Map</a></li>
+              <li><a href="page editor.html">Page Editor</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>INFORMATION</h3>
+            <ul>
+              <li><a href="../AboutUs_page/aboutUS.html">About Us</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="../contactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>MY ACCOUNT</h3>
+            <ul>
+              <li><a href="../Account_page/account.html">Account</a></li>
+              <li><a href="">Order History</a></li>
+              <li><a href="">Newsletter</a></li>
+              <li><a href="">Return Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>FOLLOW US</h3>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/" target="_blank">Twitter</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p id="copyright">Copyright &copy; 2021 - GEAR UP</p>
+      </div>
+    </footer>
+  </body>
+</html>

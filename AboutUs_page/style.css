@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap");
+
+.navbar {
+  display: flex;
+  z-index: 100;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  opacity: 0.8;
+  color: #fff;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  padding: 0 30px;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #28a745;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .logo {
+  font-weight: 400;
+}
+
+.text-primary {
+  color: #28a745;
+}
+
+.aboutUs {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 52px;
+}
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.studentAvatarContainer {
+  justify-content: center;
+  display: flex;
+  background-color: #39b1c9;
+  align-items: center;
+  margin: 50px;
+
+  outline-width: 3px;
+  outline-color: rgb(169, 179, 206);
+  outline-style: inset;
+}
+
+.studentDescriptionContainer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 40%;
+
+  background-color: #7bc3d1;
+  text-align: center;
+  outline-style: solid;
+  outline-width: 0px;
+  outline-color: rgb(169, 179, 206);
+  justify-content: center;
+}
+body {
+  background-color: rgb(61, 217, 84);
+  font-family: "Josefin Sans", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.studentName {
+  color: #81c644;
+  font-size: 26px;
+}
+.studentRole {
+  font-size: 12px;
+  color: #8e8b8b;
+
+  text-transform: uppercase;
+  margin: 12px 0px;
+}
+.avatar {
+  margin: 5px 10px;
+}
+
+.f-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+.f-row {
+  display: flex;
+}
+
+footer {
+  background: #000;
+  color: #b0b5b0;
+  font-size: 14px;
+  padding: 60px 0;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 5px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footer-col {
+  flex-basis: 25%;
+  margin: 0 3.5rem;
+}
+
+footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: #b0b5b0;
+}
+
+footer a:hover {
+  color: #3dd954;
+}
+
+#copyright {
+  position: relative;
+  top: 40px;
+  text-align: center;
+}

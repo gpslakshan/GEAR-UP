@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="quizstyle.css" />
+
+    <title>Quiz</title>
+  </head>
+
+  <body id="background">
+    <div class="homeBox customBox" id="homeBox">
+      <h3>Question Guide</h3>
+      <p>
+        total number of Questions : 10<br />
+        given time : 1 Minute
+      </p>
+      <button
+        type="button"
+        class="btn"
+        onclick="showQuizBox();startStopwatch()"
+      >
+        Start Quiz
+      </button>
+    </div>
+
+    <div class="questionBox customBox hide" id="questionBox">
+      <div class="questionNumber"></div>
+      <div class="questionText"></div>
+      <div class="optionContainer">
+        <form name="formOption" id="formOptionId">
+          <div class="option" id="option0" onclick="optionDivOnclick(0)">
+            <input type="radio" name="options" id="option00" value="0" />
+            <label for="option00" id="label0"></label>
+          </div>
+
+          <div class="option" id="option1" onclick="optionDivOnclick(1)">
+            <input type="radio" name="options" id="option01" value="1" />
+            <label for="option01" id="label1"></label>
+          </div>
+          <div class="option" id="option2" onclick="optionDivOnclick(2)">
+            <input type="radio" name="options" id="option02" value="2" />
+            <label for="option02" id="label2"></label>
+          </div>
+
+          <div class="option" id="option3" onclick="optionDivOnclick(3)">
+            <input type="radio" name="options" id="option03" value="3" />
+            <label for="option03" id="label3"></label>
+          </div>
+        </form>
+      </div>
+      <div class="nextButton">
+        <button type="button" class="btn" onclick="getNextQuestion()">
+          Next
+        </button>
+      </div>
+    </div>
+
+    <div class="resultBox customBox hide" id="resultBox">
+      <h1>Quiz Over</h1>
+      <table class="resultSheet">
+        <tr>
+          <th>Question 01</th>
+          <td><span id="question1"></span></td>
+        </tr>
+        <tr>
+          <th>Question 02</th>
+          <td><span id="question2"></span></td>
+        </tr>
+        <tr>
+          <th>Question 03</th>
+          <td><span id="question3"></span></td>
+        </tr>
+        <tr>
+          <th>Question 04</th>
+          <td><span id="question4"></span></td>
+        </tr>
+        <tr>
+          <th>Question 05</th>
+          <td><span id="question5"></span></td>
+        </tr>
+        <tr>
+          <th>Question 06</th>
+          <td><span id="question6"></span></td>
+        </tr>
+        <tr>
+          <th>Question 07</th>
+          <td><span id="question7"></span></td>
+        </tr>
+        <tr>
+          <th>Question 08</th>
+          <td><span id="question8"></span></td>
+        </tr>
+        <tr>
+          <th>Question 09</th>
+          <td><span id="question9"></span></td>
+        </tr>
+        <tr>
+          <th>Question 10</th>
+          <td><span id="question10"></span></td>
+        </tr>
+        <tr>
+          <th>Total Correct</th>
+          <td><span id="totalCorrect"></span></td>
+        </tr>
+        <tr>
+          <th>Total Incorrect</th>
+          <td><span id="totalIncorrect"></span></td>
+        </tr>
+        <tr>
+          <th>Total Marks</th>
+          <td><span id="totalMarks"></span></td>
+        </tr>
+        <tr>
+          <th>spent time</th>
+          <td><span id="spentTime"></span></td>
+        </tr>
+      </table>
+    </div>
+    <script src="myScript.js"></script>
+  </body>
+</html>

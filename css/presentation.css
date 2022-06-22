@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#group-title {
+  margin-left: 5rem;
+}
+
+#team-members {
+  list-style-type: square;
+  margin-left: 8rem;
+  font-size: 20px;
+}
+
+#team-members li {
+  padding: 5px 0;
+}
+
+#loading-img {
+  position: relative;
+  left: 50%;
+  height: 30px;
+}
+
+#secondsDisplay {
+  text-align: center;
+}
